@@ -21,8 +21,11 @@ Ensure you have [Bun](https://bun.sh/) installed.
 
 ### Steps
 1. Clone the repository from [GitHub](https://github.com/TH3-MA3STRO/TerminalTalk/).
-2. Navigate to the TerminalTalk directory.
-3. Install dependencies by running:
+   ```bash
+   git clone https://github.com/TH3-MA3STRO/TerminalTalk.git
+   ```
+3. Navigate to the TerminalTalk directory.
+4. Install dependencies by running:
    ```bash
    bun install
    ```
