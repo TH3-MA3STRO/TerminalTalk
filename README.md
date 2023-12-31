@@ -20,7 +20,7 @@ To use TerminalTalk, you'll need:
 Ensure you have [Bun](https://bun.sh/) installed.
 
 ### Steps
-1. Clone the repository from [GitHub](https://github.com/terminaltalk/terminaltalk).
+1. Clone the repository from [GitHub](https://github.com/TH3-MA3STRO/TerminalTalk/).
 2. Navigate to the TerminalTalk directory.
 3. Install dependencies by running:
    ```bash
