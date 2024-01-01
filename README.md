@@ -1,7 +1,6 @@
+# Documentation
 
-# TerminalTalk Documentation
-
-TerminalTalk is a command-line decentralized chat application that allows users to host their own server and communicate with friends via shared links.
+TerminalTalk is a command-line decentralized chat application that allows users to host their own server and communicate with friends.
 
 ## Description
 
@@ -11,7 +10,7 @@ TerminalTalk provides a seamless chatting experience directly through the termin
 
 To use TerminalTalk, you'll need:
 - [Bun](https://bun.sh/)
-- [Ngrok](https://ngrok.com) or similar tools for creating tunnels to host your server
+- [Ngrok](https://ngrok.com) or a similar tool for creating tunnels to host your server
 - A terminal or command line interface
 
 ## Installation
