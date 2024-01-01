@@ -47,7 +47,7 @@ const input = blessed.textbox({
 });
 const label = blessed.text({
     top: 0,
-    content: "Enter your name:",
+    content: "<NAME>:<ROOM ID> :->",
     left: 'center',
     height: 1,
     width: '100%',
@@ -81,7 +81,7 @@ screen.append(label);
 
 unameForm.on('submit', function () {
     const ip = unameForm.getValue()?.split(":")
-    const socket = new WebSocket(`ws://PATH-TO-SERVER?${ip[1]}`, [ip[0]]);
+    const socket = new WebSocket(`wss://PATH-TO-SERVER?room=${ip[1]}`, [ip[0]]); // PATH-TO-SERVER here
     screen.remove(unameForm);
     screen.remove(label)
     screen.append(messageBox);
