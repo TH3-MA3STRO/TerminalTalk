@@ -31,7 +31,7 @@ let server = Bun.serve<WebSocketData>({
             ws.publish(roomName, `${ws.data.name}: ${message}`);
         },
         close(ws, code, reason) {
-            ws.publish(`${ws.data.room}`, `${ws.data.name} has left the chat`);
+            server.publish( `${ws.data.room}`, `${ws.data.name} has left the chat`);
             ws.close()
         },
     }
