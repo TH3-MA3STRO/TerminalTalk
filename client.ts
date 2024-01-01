@@ -81,7 +81,7 @@ screen.append(label);
 
 unameForm.on('submit', function () {
     const ip = unameForm.getValue()?.split(":")
-    const socket = new WebSocket(`wss://PATH-TO-SERVER?room=${ip[1]}`, [ip[0]]); // PATH-TO-SERVER here
+    const socket = new WebSocket(`wss://PATH-TO-SERVER?room=${ip[1]}`, [ip[0]]); // replace PATH-TO-SERVER here with the link generated using ngrok
     screen.remove(unameForm);
     screen.remove(label)
     screen.append(messageBox);
@@ -95,7 +95,7 @@ unameForm.on('submit', function () {
         if (key.full === 'enter') {
             const inputValue: string = input.getValue();
             if (inputValue.trim() !== '') {
-                messageBox.pushLine(`You entered: ${inputValue}`);
+                messageBox.pushLine(`You: ${inputValue}`);
                 socket.send(inputValue)
                 messageBox.setScrollPerc(100);
                 input.clearValue();
